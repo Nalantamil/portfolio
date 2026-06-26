@@ -12,17 +12,17 @@ function Education(){
       icon: '📚',
       degree: 'HSC (12th Grade)',
       field: 'General Education',
-      school: 'Government Higher Secondary School, Lakkapuram, Erode',
+      school: 'Government Higher Secondary School, Ganapathipalayam, Erode',
       duration: '2021 - 2022',
-      score: 'Percentage: 60.6%'
+      score: 'Percentage: 60.8%'
     },
     {
       icon: '📚',
       degree: 'SSLC (10th Grade)',
       field: 'General Education',
-      school: 'Government Higher Secondary School, Ganapathipalayam, Erode',
+      school: 'Government Higher Secondary School, Lakkapuram, Erode',
       duration: '2019 - 2020',
-      score: 'Percentage: 60.8%'
+      score: 'Percentage: 60.6%'
     }
   ]
 

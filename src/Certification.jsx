@@ -1,35 +1,34 @@
 function Certification(){
-const certifications = [
+  const certifications = [
     {
       icon: '🏆',
       title: 'Full Stack Python Development',
       issuer: 'ETS Academy, Erode',
-      description: 'Covered HTML, CSS, JavaScript, Python, and basic backend concepts'
+      description: 'Built end-to-end web apps using HTML, CSS, JavaScript, Python, and Flask with backend API integration.'
     },
     {
       icon: '🏆',
       title: 'SQL',
       issuer: 'HackerRank',
-      description: 'Database management and SQL query optimization'
+      description: 'Solved advanced SQL challenges covering joins, subqueries, aggregations, and query optimization.'
     },
     {
       icon: '🏆',
       title: 'Introduction to MongoDB',
-      issuer: 'MongoDB University (online)',
-      description: 'NoSQL database fundamentals and MongoDB operations'
+      issuer: 'MongoDB University',
+      description: 'Learned NoSQL data modeling, CRUD operations, indexing, and aggregation pipelines in MongoDB.'
     },
     {
       icon: '🏆',
       title: 'Python Programming',
       issuer: 'GeeksforGeeks',
-      description: 'Core Python concepts and programming practices'
+      description: 'Strengthened core Python skills including OOP, file handling, modules, and problem solving.'
     }
   ]
 
   return (
     <section id="certifications" className="certifications">
       <h2 className="section-title">Certifications</h2>
-
       <div className="certifications-grid">
         {certifications.map((cert, index) => (
           <div key={index} className="cert-card">
@@ -41,6 +40,6 @@ const certifications = [
         ))}
       </div>
     </section>
-  )    
+  )
 }
 export default Certification
