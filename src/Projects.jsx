@@ -1,31 +1,22 @@
 function Projects(){
   const projects = [
     {
-      icon: '🤖',
-      title: 'AI-Powered Student Assistance Chatbot',
-      description: 'Developed a Flask chatbot with 3+ features — PDF extraction, speech-to-text, and translation. Designed RESTful backend routes handling 10+ query types for contextual responses.',
-      tech: ['Python', 'Flask', 'NLP', 'Speech-to-Text', 'PDF Processing'],
-      live: null,
-      github: null,
-      type: 'Academic Project'
+      icon: '💬',
+      title: 'Nalantamil Chat',
+      description: 'A real-time group chat web application with live messaging, reactions, and user authentication. Features typing indicators, online user tracking, and message edit/delete with emoji reactions.',
+      tech: ['React', 'Flask', 'Flask-SocketIO', 'MongoDB Atlas', 'JWT'],
+      live: 'https://s-nalantamil-chat.vercel.app',
+      github: 'https://github.com/Nalantamil/S.Nalantamil-Chat',
+      type: 'Personal Project'
     },
     {
-      icon: '🌿',
-      title: 'WildTrack TN',
-      description: 'Created an AI web system covering 30+ Tamil Nadu districts with tourist info on temples and wildlife. Enabled dynamic content retrieval based on user location for improved accessibility.',
-      tech: ['Python', 'Flask', 'AI', 'Location Based'],
-      live: null,
-      github: null,
-      type: 'Academic Project'
-    },
-    {
-      icon: '🚌',
-      title: 'Bus Ticket Booking System',
-      description: 'Engineered a web app for bus ticket booking with real-time seat availability across 10+ routes. Implemented user authentication and MySQL database for persistent booking storage.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-      live: null,
-      github: null,
-      type: 'Academic Project'
+      icon: '📊',
+      title: 'Agency Dashboard',
+      description: 'A full-stack client and project management system built for digital agencies to manage clients, projects, tasks, team members and reports with live dashboard analytics.',
+      tech: ['React', 'Vite', 'Flask', 'Python', 'MongoDB Atlas', 'REST API', 'CSS3'],
+      live: 'https://nalantamil-agency-app.netlify.app',
+      github: 'https://github.com/Nalantamil/agency-dashboard',
+      type: 'Personal Project'
     },
     {
       icon: '🏆',
