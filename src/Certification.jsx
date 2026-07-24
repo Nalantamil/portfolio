@@ -8,12 +8,6 @@ function Certification(){
     },
     {
       icon: '🏆',
-      title: 'SQL',
-      issuer: 'HackerRank',
-      description: 'Solved advanced SQL challenges covering joins, subqueries, aggregations, and query optimization.'
-    },
-    {
-      icon: '🏆',
       title: 'Introduction to MongoDB',
       issuer: 'MongoDB University',
       description: 'Learned NoSQL data modeling, CRUD operations, indexing, and aggregation pipelines in MongoDB.'
