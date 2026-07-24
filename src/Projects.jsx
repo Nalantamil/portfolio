@@ -12,8 +12,8 @@ function Projects(){
     {
       icon: '💬',
       title: 'Nalantamil Chat',
-      description: 'A real-time group chat web application with live messaging, reactions, and user authentication. Features typing indicators, online user tracking, and message edit/delete with emoji reactions.',
-      tech: ['React', 'Flask', 'Flask-SocketIO', 'MongoDB Atlas', 'JWT'],
+      description: 'A real-time group and private chat app with Socket.IO, featuring password-protected DMs, message reactions, edit/delete, and pinned messages. Supports image/file sharing via Cloudinary, typing indicators, read receipts, and JWT authentication.',
+      tech: ['React', 'Flask', 'Flask-SocketIO', 'MongoDB', 'JWT', 'Cloudinary'],
       live: 'https://s-nalantamil-chat.vercel.app',
       github: 'https://github.com/Nalantamil/S.Nalantamil-Chat',
       type: 'Personal Project'
