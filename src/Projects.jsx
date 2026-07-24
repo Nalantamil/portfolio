@@ -3,8 +3,8 @@ function Projects(){
     {
       icon: '🤖',
       title: 'TechMentor AI',
-      description: 'An AI-powered chatbot that acts as a mentor for tech learners, answering questions and guiding users through programming concepts and career paths in real time.',
-      tech: ['React', 'Netlify', 'OpenAI API'],
+      description: 'A full-stack AI mentoring chatbot with real-time streaming responses, session-based chat history, and secure authentication (JWT + Google OAuth). Uses the Groq API (LLaMA 3.3) to guide users through programming concepts and interview prep.',
+      tech: ['React', 'Vite', 'Tailwind CSS', 'Flask', 'MongoDB', 'Groq API', 'JWT'],
       live: 'https://techmentorai.netlify.app',
       github: '',
       type: 'Personal Project'
