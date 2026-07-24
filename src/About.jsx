@@ -15,7 +15,8 @@ function About(){
             I build full-stack web apps using <span className="highlight">React, Python,
             and Flask</span>, with hands-on experience in REST APIs, MongoDB,
             Socket.IO, and JWT authentication. I've shipped real personal projects
-            including a real-time chat app and an agency management dashboard.
+            including an AI-powered chatbot, a real-time chat app, and an agency
+            management dashboard.
           </p>
           <br />
           <p>
