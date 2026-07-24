@@ -21,8 +21,8 @@ function Projects(){
     {
       icon: '📊',
       title: 'Agency Dashboard',
-      description: 'A full-stack client and project management system built for digital agencies to manage clients, projects, tasks, team members and reports with live dashboard analytics.',
-      tech: ['React', 'Vite', 'Flask', 'Python', 'MongoDB Atlas', 'REST API', 'CSS3'],
+      description: 'A full-stack agency management system with dedicated modules for Clients, Projects, Tasks, Team, and Reports, each backed by full CRUD REST APIs and routed with React Router.',
+      tech: ['React', 'React Router', 'Flask', 'MongoDB', 'REST API'],
       live: 'https://nalantamil-agency-app.netlify.app',
       github: 'https://github.com/Nalantamil/agency-dashboard',
       type: 'Personal Project'
