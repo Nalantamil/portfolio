@@ -3,32 +3,37 @@ function Skills() {
     {
       icon: '💻',
       title: 'Programming',
-      items: ['Python']
+      items: ['Python', 'JavaScript']
     },
     {
       icon: '🌐',
       title: 'Web Technologies',
-      items: ['HTML', 'CSS', 'JavaScript', 'React']
+      items: ['HTML', 'CSS', 'Tailwind CSS']
     },
     {
       icon: '⚙️',
       title: 'Frameworks',
-      items: ['Flask']
+      items: ['React.js', 'Flask']
     },
     {
       icon: '🗄️',
       title: 'Database',
-      items: ['MySQL', 'MongoDB']
+      items: ['MongoDB', 'MySQL']
     },
     {
       icon: '🛠️',
       title: 'Tools & Platforms',
-      items: ['VS Code', 'Git', 'GitHub', 'Microsoft Excel']
+      items: ['Git', 'GitHub', 'VS Code', 'Cloudinary']
+    },
+    {
+      icon: '🔌',
+      title: 'APIs & Backend',
+      items: ['REST APIs', 'JWT Authentication', 'Socket.IO']
     },
     {
       icon: '🤖',
       title: 'AI / Other',
-      items: ['Prompt Engineering', 'Basic LLM Concepts', 'REST APIs']
+      items: ['Prompt Engineering', 'Basic LLM Concepts']
     }
   ]
 
