@@ -1,6 +1,15 @@
 function Projects(){
   const projects = [
     {
+      icon: '🤖',
+      title: 'TechMentor AI',
+      description: 'An AI-powered chatbot that acts as a mentor for tech learners, answering questions and guiding users through programming concepts and career paths in real time.',
+      tech: ['React', 'Netlify', 'OpenAI API'],
+      live: 'https://techmentorai.netlify.app',
+      github: '',
+      type: 'Personal Project'
+    },
+    {
       icon: '💬',
       title: 'Nalantamil Chat',
       description: 'A real-time group chat web application with live messaging, reactions, and user authentication. Features typing indicators, online user tracking, and message edit/delete with emoji reactions.',
