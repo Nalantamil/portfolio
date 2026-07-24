@@ -30,8 +30,8 @@ function Projects(){
     {
       icon: '🏆',
       title: 'Sports Quiz App',
-      description: 'Built a full React quiz app with Cricket and Football categories, 15 questions each, timer, score tracking, player name input and result page with performance message.',
-      tech: ['React', 'React Router', 'CSS', 'Vite'],
+      description: 'A React quiz app with Cricket and Football modes, featuring 15-second timed questions, color-coded answer feedback, and dynamic performance-based results.',
+      tech: ['React', 'React Router', 'Vite'],
       live: 'https://nalantamil-cricfoo-quiz.netlify.app',
       github: 'https://github.com/Nalantamil/quiz-app',
       type: 'Personal Project'
