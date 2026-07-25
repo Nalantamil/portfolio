@@ -1491,3 +1491,44 @@ body {
   z-index: 0;
   pointer-events: none;
 }
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card:hover .skill-icon {
+  transform: rotateY(15deg) scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+.letter-reveal {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: letterPop 0.5s ease forwards;
+}
+
+@keyframes letterPop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== NAVBAR SCROLL GLOW ===== */
+.navbar {
+  transition: box-shadow 0.4s ease, border-image 0.4s ease;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 8px 45px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 107, 53, 0.25);
+  border-bottom-width: 4px;
+}

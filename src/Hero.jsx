@@ -42,7 +42,17 @@ function Hero(){
         </div>
 
         <p className="hero-greeting">Hi, I'm</p>
-        <h1 className="hero-name">Nalantamil S</h1>
+        <h1 className="hero-name">
+          {'Nalantamil S'.split('').map((char, i) => (
+            <span
+              key={i}
+              className="letter-reveal"
+              style={{ animationDelay: `${0.6 + i * 0.05}s` }}
+            >
+              {char === ' ' ? '\u00A0' : char}
+            </span>
+          ))}
+        </h1>
         <h2 className="hero-title">
           {displayedText}
           <span className="typewriter-cursor" style={{ opacity: showCursor ? 1 : 0 }}>|</span>

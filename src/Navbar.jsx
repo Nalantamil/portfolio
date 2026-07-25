@@ -1,6 +1,19 @@
+import { useState, useEffect } from 'react';
+
 function Navbar(){
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > window.innerHeight * 0.8);
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return(
-      <nav className="navbar">
+      <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div className="nav-logo">
         <h2>Nalantamil S</h2>
         </div>

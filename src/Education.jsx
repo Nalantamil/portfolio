@@ -1,3 +1,26 @@
+import useScrollReveal from './useScrollReveal.js';
+
+function EduCard({ edu, index }) {
+  const { ref, visible } = useScrollReveal();
+
+  return (
+    <div
+      ref={ref}
+      className={`edu-card reveal ${visible ? 'reveal-visible' : ''}`}
+      style={{ transitionDelay: `${index * 0.12}s` }}
+    >
+      <div className="edu-icon">{edu.icon}</div>
+      <h3 className="edu-degree">{edu.degree}</h3>
+      <p className="edu-field">{edu.field}</p>
+      <p className="edu-school">{edu.school}</p>
+      <div className="edu-footer">
+        <span className="edu-duration">{edu.duration}</span>
+        <span className="edu-score">{edu.score}</span>
+      </div>
+    </div>
+  );
+}
+
 function Education(){
   const education = [
     {
@@ -32,16 +55,7 @@ function Education(){
 
       <div className="education-grid">
         {education.map((edu, index) => (
-          <div key={index} className="edu-card">
-            <div className="edu-icon">{edu.icon}</div>
-            <h3 className="edu-degree">{edu.degree}</h3>
-            <p className="edu-field">{edu.field}</p>
-            <p className="edu-school">{edu.school}</p>
-            <div className="edu-footer">
-              <span className="edu-duration">{edu.duration}</span>
-              <span className="edu-score">{edu.score}</span>
-            </div>
-          </div>
+          <EduCard key={index} edu={edu} index={index} />
         ))}
       </div>
     </section>
