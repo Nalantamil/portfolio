@@ -1,6 +1,36 @@
+import { useState, useEffect } from 'react';
+import ParticlesBackground from './ParticlesBackground.jsx';
+
 function Hero(){
+  const fullText = 'Full Stack Developer';
+  const [displayedText, setDisplayedText] = useState('');
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index <= fullText.length) {
+        setDisplayedText(fullText.slice(0, index));
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev);
+    }, 500);
+
+    return () => clearInterval(cursorInterval);
+  }, []);
+
   return(
     <section id="home" className="hero">
+      <ParticlesBackground />
       <div className="hero-content">
 
         <div className="hero-profile">
@@ -13,7 +43,10 @@ function Hero(){
 
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Nalantamil S</h1>
-        <h2 className="hero-title">Full Stack Developer</h2>
+        <h2 className="hero-title">
+          {displayedText}
+          <span className="typewriter-cursor" style={{ opacity: showCursor ? 1 : 0 }}>|</span>
+        </h2>
         <p className="hero-desc">
           Building full-stack web apps with React, Python & Flask
         </p>
@@ -30,4 +63,3 @@ function Hero(){
   );
 }
 export default Hero
-

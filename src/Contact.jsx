@@ -1,3 +1,42 @@
+import useMagnetic from './useMagnetic.js';
+
+function ContactCard({ contact }) {
+  const { ref, handleMouseMove, handleMouseLeave } = useMagnetic(0.15);
+
+  return (
+    <a
+      href={contact.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-card"
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="contact-icon">{contact.icon}</div>
+      <p className="contact-label">{contact.label}</p>
+      <p className="contact-value">{contact.value}</p>
+    </a>
+  );
+}
+
+function ContactButton({ href, className, target, children }) {
+  const { ref, handleMouseMove, handleMouseLeave } = useMagnetic(0.2);
+
+  return (
+    <a
+      href={href}
+      target={target}
+      className={className}
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      {children}
+    </a>
+  );
+}
+
 function Contact(){
   const contactInfo = [
     {
@@ -32,27 +71,23 @@ function Contact(){
 
       <div className="contact-grid">
         {contactInfo.map((contact, index) => (
-          <a key={index} href={contact.link} target="_blank" rel="noopener noreferrer" className="contact-card">
-            <div className="contact-icon">{contact.icon}</div>
-            <p className="contact-label">{contact.label}</p>
-            <p className="contact-value">{contact.value}</p>
-          </a>
+          <ContactCard key={index} contact={contact} />
         ))}
       </div>
 
       <div className="contact-buttons">
-        <a href="mailto:tamilsundhar49@gmail.com" className="contact-btn email-btn">
+        <ContactButton href="mailto:tamilsundhar49@gmail.com" className="contact-btn email-btn">
           📧 Email Me
-        </a>
-        <a href="https://linkedin.com/in/nalantamil-sundararaju-813242258" target="_blank" className="contact-btn linkedin-btn">
+        </ContactButton>
+        <ContactButton href="https://linkedin.com/in/nalantamil-sundararaju-813242258" target="_blank" className="contact-btn linkedin-btn">
           🔗 LinkedIn
-        </a>
-        <a href="https://github.com/Nalantamil" target="_blank" className="contact-btn github-btn">
+        </ContactButton>
+        <ContactButton href="https://github.com/Nalantamil" target="_blank" className="contact-btn github-btn">
           🐙 GitHub
-        </a>
-        <a href="https://wa.me/917397071619" target="_blank" className="contact-btn whatsapp-btn">
+        </ContactButton>
+        <ContactButton href="https://wa.me/917397071619" target="_blank" className="contact-btn whatsapp-btn">
           💬 WhatsApp
-        </a>
+        </ContactButton>
       </div>
     </section>
   )

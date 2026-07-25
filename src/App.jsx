@@ -8,9 +8,13 @@ import Certifi from './Certification.jsx';
 import Education from './Education.jsx';
 import Contact from './Contact.jsx';
 import Footer from './Footer.jsx';
+import BackToTop from './BackToTop.jsx';
+import Preloader from './Preloader.jsx';
+
 function App(){
   return(
     <>
+    <Preloader />
     <Navbar />
     <Hero />
     <About />
@@ -21,6 +25,7 @@ function App(){
     <Education />
     <Contact />
     <Footer />
+    <BackToTop />
     </>
   );
 }
